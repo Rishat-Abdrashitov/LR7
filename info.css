@@ -1,0 +1,63 @@
+/* Основные стили для карусели */
+.carousel {
+    position: relative;
+    width: 100%; /* Занимает всю ширину родителя */
+    overflow: hidden; /* Скрывает выходящие за пределы элементы */
+}
+
+.carousel-inner {
+    display: flex; /* Гибкое выравнивание элементов карусели */
+}
+
+.carousel-item {
+    min-width: 100%; /* Каждый элемент занимает 100% ширины */
+    transition: transform 0.5s ease; /* Плавная анимация */
+}
+
+.carousel-item img {
+    width: 100%; /* Ширина изображения 100% от элемента карусели */
+    height: auto; /* Высота изображения сохраняется пропорционально */
+}
+
+/* Стиль кнопок управления каруселью */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ширина кнопок */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    color: white; /* Цвет иконок */
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: white; /* Белые иконки */
+    border-radius: 50%; /* Круглая форма кнопки */
+}
+
+/* Стиль для текста альтернативы изображению */
+.carousel-item img[alt] {
+    display: block; /* Отображение блока для текста альтернативы */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0); /* Скрытие */
+    border: 0;
+}
+.card-img-top {
+    width: 415px;
+    height: 600px;
+}
+img {
+    border-radius: 20px;
+}
+
+.img_all {
+    width: 304px;
+    height: 500px;
+}
